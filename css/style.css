@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
  
 body {
@@ -24,6 +25,7 @@ header h1 {
   background-color: var(--whiterepeat);
   padding-left: 40px;
   padding-right: 10px;
+  border-radius: 5px;
 }
 
 nav {
@@ -42,7 +44,7 @@ nav a {
 }
 
 .hero-banner {
-
+  /* Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
   background-image: url(/images/computer-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -57,4 +59,43 @@ nav a {
   color: var(--whiterepeat);
   margin-top: 0px;
   padding-right: 20px;
+  font-size: 17px;
+  background-color: black;
+  border-radius: 5px;
+  padding-left: 3px;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#about {
+  padding-top: 10px;
+  padding-right: 20px;
+  gap: 20px;
+  display: flex;
+}
+
+#about h2 {
+  padding-left: 80px;
+  margin-top: 16px;
+}
+
+/* right column for About Me Section */
+.right {
+  display: flex;
+  gap: 30px;
+}
+
+.right img {
+  height: 150px;
+  margin-top: 16px;
+
 }
