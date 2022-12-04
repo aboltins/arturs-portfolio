@@ -1,3 +1,7 @@
+:root {
+  --greyrepeat: rgb(77, 76, 76);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,13 +14,13 @@ body {
 }
 
 header {
-  background-color: red;
+  background-color: var(--greyrepeat);
   display: flex;
   justify-content: space-between;
 }
 
 header h1 {
-  background-color: pink;
+  background-color: rgb(255, 247, 248);
   padding-left: 40px;
   padding-right: 10px;
 }
@@ -29,5 +33,10 @@ nav {
 
 nav a {
   padding-right: 20px;
-
+  color: rgb(247, 242, 242);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 5px;
 }
+
