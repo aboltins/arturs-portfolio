@@ -6,6 +6,8 @@
 * {
   box-sizing: border-box;
   max-width: 100%;
+  scroll-behavior: smooth;
+  
 }
  
 /* targets entire body element */
@@ -166,15 +168,22 @@ main {
   background-image: url(/images/quintero-unsplash.jpg);
 }
 
-/* Targets all of the portfolio divs at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
-.work-right div {
+/* Targets all of the portfolio anchors at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
+.work-right a {
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  border-style: solid;
+  border-color: rgb(30, 29, 29);
+
 }
 
-/* Targets all of the heading titles within the portfolio divs. */
+.work-right a:hover {
+  opacity: 80%;
+}
+
+/* Targets all of the heading titles within the portfolio anchors. */
 .work-right a h3 {
   padding: 8px;
   background-color: aqua;
@@ -182,9 +191,9 @@ main {
   border-bottom-right-radius: 5px;
 }
 
-/* Targets the heading of the portfolio div titles. */
+/* Targets the heading of the portfolio anchor titles. */
 .work-right a h3 span{
-  font-size: 25px;
+  font-size: 23px;
 }
 
 
