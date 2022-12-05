@@ -115,14 +115,14 @@ main {
   border-radius: 5px;
 }
 
-/* Work Section */
+/* Portfolio container Work Section */
 #work {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* Right side of the work section */
+/* Right side of the work section, created as grid container and all grid-items below*/
 .work-right {
    display: grid; 
    grid-template-columns: 25% 25% 25% 25%;
@@ -143,11 +143,6 @@ main {
   grid-area: horiseon;
   background-image: url(/images/ramon-unsplash.jpg);
   background-position: center;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .study-guide {
@@ -170,6 +165,30 @@ main {
   grid-area: dolor;
   background-image: url(/images/quintero-unsplash.jpg);
 }
+
+/* Targets all of the portfolio divs at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
+.work-right div {
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* Targets all of the heading titles within the portfolio divs. */
+.work-right div h3 {
+  padding: 8px;
+  background-color: aqua;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.work-right div h3 span{
+  font-size: 25px;
+}
+
+
+
 
 
 
