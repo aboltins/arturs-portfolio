@@ -8,6 +8,7 @@
   max-width: 100%;
 }
  
+/* targets entire body element */
 body {
   margin: 0;
   padding: 0;
@@ -16,12 +17,15 @@ body {
   background-color: var(--whiterepeat);
 }
 
+/* HEADER */
+
 header {
   background-color: black;
   display: flex;
   justify-content: space-between;
 }
 
+/* sets properties to h1 within the header */
 header h1 {
   background-color: var(--whiterepeat);
   padding-left: 40px;
@@ -43,6 +47,8 @@ nav a {
   text-underline-position: under;
   text-underline-offset: 5px;
 }
+
+/* HERO */
 
 .hero-banner {
   /* Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
@@ -66,11 +72,24 @@ nav a {
   padding-left: 3px;
 }
 
-.page-wrap {
+/* MAIN */
+
+/* Sets flex to entire Main part of the page and creates column direction */
+
+main {
   display: flex;
   flex-direction: column;
 }
 
+/* left headings for all Main sections */
+.left {
+  padding-left: 13%;
+  margin-top: 16px;
+  width: 8;
+}
+
+
+/* About Me Section */
 #about {
   padding-top: 10px;
   padding-right: 20px;
@@ -80,46 +99,47 @@ nav a {
   justify-content: space-between;
 }
 
-.left {
-  padding-left: 13%;
-  margin-top: 16px;
-  width: 8;
-}
 
 /* right column for About Me Section */
-.right {
+.about-right {
   display: flex;
   gap: 30px;
   width: 68%;
 }
 
-.right img {
+/* Small Avatar image in the about me section */
+.about-right img {
   height: 150px;
   margin-top: 16px;
   margin-bottom: 16px;
   border-radius: 5px;
 }
 
+/* Work Section */
 #work {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/* Right side of the work section */
 .work-right {
    display: grid; 
    grid-template-columns: 25% 25% 25% 25%;
    grid-template-rows: 150px 150px 150px 150px;
    grid-template-areas:
    "topper topper topper topper"
-   "topper topper topper topper";
+   "topper topper topper topper"
+   "horiseon horiseon lorem lorem"
+   "ipsum ipsum dolor dolor";
    gap: 0px;
    width: 68%;
-   padding-right: 20px;
+   gap: 15px;
+   padding-right: 60px;
 
 }
 
-.one {
+.study-guide {
   grid-area: topper;
   background-image: url(/images/ramon-unsplash.jpg);
   background-position: center;
@@ -129,5 +149,26 @@ nav a {
   align-items: center;
   justify-content: center;
 }
+
+.horiseon {
+  grid-area: horiseon;
+  background-image: url(/images/anders-unsplash.jpg);
+}
+
+.lorem {
+  grid-area: lorem;
+  background-image: url(/images/denilo-unsplash.jpg);
+}
+
+.ipsum {
+  grid-area: ipsum;
+  background-image: url(/images/goh-unsplash.jpg);
+}
+
+.dolor {
+  grid-area: dolor;
+  background-image: url(/images/quintero-unsplash.jpg);
+}
+
 
 
