@@ -175,15 +175,15 @@ main {
 }
 
 /* Targets all of the heading titles within the portfolio divs. */
-.work-right div h3 {
+.work-right a h3 {
   padding: 8px;
   background-color: aqua;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-
-.work-right div h3 span{
+/* Targets the heading of the portfolio div titles. */
+.work-right a h3 span{
   font-size: 25px;
 }
 
