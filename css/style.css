@@ -109,7 +109,7 @@ main {
 
 /* Small Avatar image in the about me section */
 .about-right img {
-  height: 150px;
+  height: 140px;
   margin-top: 16px;
   margin-bottom: 16px;
   border-radius: 5px;
@@ -128,9 +128,9 @@ main {
    grid-template-columns: 25% 25% 25% 25%;
    grid-template-rows: 150px 150px 150px 150px;
    grid-template-areas:
-   "topper topper topper topper"
-   "topper topper topper topper"
-   "horiseon horiseon lorem lorem"
+   "horiseon horiseon horiseon horiseon"
+   "horiseon horiseon horiseon horiseon"
+   "study-guide study-guide lorem lorem"
    "ipsum ipsum dolor dolor";
    gap: 0px;
    width: 68%;
@@ -139,8 +139,8 @@ main {
 
 }
 
-.study-guide {
-  grid-area: topper;
+.horiseon {
+  grid-area: horiseon;
   background-image: url(/images/ramon-unsplash.jpg);
   background-position: center;
   border-radius: 5px;
@@ -150,9 +150,10 @@ main {
   justify-content: center;
 }
 
-.horiseon {
-  grid-area: horiseon;
+.study-guide {
+  grid-area: study-guide;
   background-image: url(/images/anders-unsplash.jpg);
+  border-radius: 5px;
 }
 
 .lorem {
@@ -169,6 +170,8 @@ main {
   grid-area: dolor;
   background-image: url(/images/quintero-unsplash.jpg);
 }
+
+
 
 
 
