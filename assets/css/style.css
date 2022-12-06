@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
 
 }
- 
+
 /* targets entire body element */
 body {
   margin: 0;
@@ -48,8 +48,8 @@ nav {
 @media only screen and (max-width: 585px) {
   nav {
     flex-direction: column;
-    }
   }
+}
 
 nav a {
   padding-right: 20px;
@@ -127,15 +127,15 @@ main {
 
 @media only screen and (max-width: 760px) {
   .left {
-      font-size: 20px;
-    }
+    font-size: 20px;
   }
+}
 
 @media only screen and (max-width: 585px) {
   .left {
-       padding-left: 4%;
-     }
-   }
+    padding-left: 4%;
+  }
+}
 
 
 /* About Me Section */
@@ -157,10 +157,10 @@ main {
 }
 
 @media only screen and (max-width: 680px) {
-  .about-right{
-      flex-direction: column;
-    }
+  .about-right {
+    flex-direction: column;
   }
+}
 
 
 /* Small Avatar image in the about me section */
@@ -171,23 +171,23 @@ main {
   border-radius: 5px;
   margin-left: 7px;
   border-style: solid;
-  border-color: var(--blackrepeat); 
+  border-color: var(--blackrepeat);
 }
 
 @media only screen and (max-width: 920px) {
-  .about-right img{
-      height: 150px;
-    }
+  .about-right img {
+    height: 150px;
   }
+}
 
 @media only screen and (max-width: 680px) {
-  .about-right img{
-      width: 150px;
-      height: auto;
-      align-self: center;
-      padding-bottom: 0;
-    }
+  .about-right img {
+    width: 150px;
+    height: auto;
+    align-self: center;
+    padding-bottom: 0;
   }
+}
 
 /* paragraph in the about me section */
 .about-right p {
@@ -195,12 +195,12 @@ main {
 }
 
 @media only screen and (max-width: 680px) {
-  .about-right p{
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding-left: 6px;
-    }
+  .about-right p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 6px;
   }
+}
 
 
 /* Portfolio container Work Section */
@@ -214,62 +214,78 @@ main {
 
 /* Right side of the work section, created as grid container and all grid-items below*/
 .work-right {
-   display: grid; 
-   grid-template-columns: 25% 25% 25% 25%;
-   grid-template-rows: 150px 150px 150px 150px;
-   grid-template-areas:
-   "horiseon horiseon horiseon horiseon"
-   "horiseon horiseon horiseon horiseon"
-   "study-guide study-guide lorem lorem"
-   "ipsum ipsum dolor dolor";
-   gap: 0px;
-   width: 68%;
-   gap: 15px;
-   padding-right: 60px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-areas:
+    "horiseon horiseon horiseon horiseon"
+    "horiseon horiseon horiseon horiseon"
+    "study-guide study-guide lorem lorem"
+    "ipsum ipsum dolor dolor";
+  gap: 0px;
+  width: 68%;
+  gap: 15px;
+  padding-right: 60px;
 }
 
 @media only screen and (max-width: 585px) {
-  .work-right{
-   grid-template-columns: 15% 17% 17% 17% 17% 17%;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-   grid-template-areas:
-   "horiseon horiseon horiseon horiseon"
-   "horiseon horiseon horiseon horiseon"
-   "study-guide study-guide study-guide study-guide"
-   "lorem lorem lorem lorem"
-   "ipsum ipsum ipsum ipsum"
-   "dolor dolor dolor dolor";
-   padding-right: 0px;
-   max-width: 80%;
-    }
+  .work-right {
+    grid-template-columns: 15% 17% 17% 17% 17% 17%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "horiseon horiseon horiseon horiseon"
+      "horiseon horiseon horiseon horiseon"
+      "study-guide study-guide study-guide study-guide"
+      "lorem lorem lorem lorem"
+      "ipsum ipsum ipsum ipsum"
+      "dolor dolor dolor dolor";
+    padding-right: 0px;
+    max-width: 80%;
   }
+}
 
 
 .horiseon {
   grid-area: horiseon;
-  background-image: url("../images/ramon-unsplash.jpg");
-  background-position: center;
+  background-image: url("../images/horiseon-screenshot.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .study-guide {
   grid-area: study-guide;
-  background-image: url("../images/anders-unsplash.jpg");
-  border-radius: 5px;
+  background-image: url("../images/study-guide-screenshot.png");
+  background-position: centre;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .lorem {
   grid-area: lorem;
+  /* Photo by <a href="https://unsplash.com/@whoisdenilo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Who’s Denilo ?</a> on <a href="https://unsplash.com/s/photos/abstract-grey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
   background-image: url("../images/denilo-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .ipsum {
   grid-area: ipsum;
-  background-image: url("../images/goh-unsplash.jpg");
+   /* Photo by <a href="https://unsplash.com/@dermanuskript?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emanuel Haas</a> on <a href="https://unsplash.com/s/photos/abstract-grey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-image: url("../images/emanuel-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .dolor {
   grid-area: dolor;
-  background-image: url("../images/quintero-unsplash.jpg");
+  /* Photo by <a href="https://unsplash.com/@rgaleriacom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/s/photos/abstract-grey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-image: url("../images/ricardo-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Targets all of the portfolio anchors at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
@@ -298,20 +314,20 @@ main {
 
 @media only screen and (max-width: 760px) {
   .work-right a h3 {
-     padding: 5px;
-    }
+    padding: 5px;
   }
+}
 
 /* Targets the heading of the portfolio anchor titles. */
-.work-right a h3 span{
+.work-right a h3 span {
   font-size: 23px;
 }
 
 @media only screen and (max-width: 860px) {
   .work-right a h3 span {
-     font-size: 15px;
-    }
+    font-size: 15px;
   }
+}
 
 /* Contact section */
 
@@ -331,11 +347,11 @@ main {
 
 @media only screen and (max-width: 760px) {
   .contact-links {
-      gap: 10px;
-      margin-left: 25px;
-      padding-top: 20px;
-    }
+    gap: 10px;
+    margin-left: 25px;
+    padding-top: 20px;
   }
+}
 
 .contact-links a {
   text-decoration: none;
@@ -351,7 +367,7 @@ main {
 footer {
   height: 30px;
   color: var(--whiterepeat);
-  background-color: var(--blackrepeat) ;
+  background-color: var(--blackrepeat);
   display: flex;
   align-items: center;
   justify-content: center;
