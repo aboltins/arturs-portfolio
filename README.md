@@ -1,6 +1,6 @@
 # Arturs Portfolio
 
-Arturs Porfolio including About Me Section, Work Portfolio section and Contact Me section.
+Portfolio including About Me Section, Work Portfolio and Contact Me section.
 
 ## Description
 
