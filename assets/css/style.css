@@ -82,7 +82,7 @@ nav a:hover {
 
 .hero-banner {
   /* Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-image: url(/assets/images/computer-unsplash.jpg);
+  background-image: url(../images/computer-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -247,29 +247,29 @@ main {
 
 .horiseon {
   grid-area: horiseon;
-  background-image: url(/assets/images/ramon-unsplash.jpg);
+  background-image: url(../images/ramon-unsplash.jpg);
   background-position: center;
 }
 
 .study-guide {
   grid-area: study-guide;
-  background-image: url(/assets/images/anders-unsplash.jpg);
+  background-image: url(../images/anders-unsplash.jpg);
   border-radius: 5px;
 }
 
 .lorem {
   grid-area: lorem;
-  background-image: url(/assets/images/denilo-unsplash.jpg);
+  background-image: url(../images/denilo-unsplash.jpg);
 }
 
 .ipsum {
   grid-area: ipsum;
-  background-image: url(/assets/images/goh-unsplash.jpg);
+  background-image: url(../images/goh-unsplash.jpg);
 }
 
 .dolor {
   grid-area: dolor;
-  background-image: url(/assets/images/quintero-unsplash.jpg);
+  background-image: url(../images/quintero-unsplash.jpg);
 }
 
 /* Targets all of the portfolio anchors at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
