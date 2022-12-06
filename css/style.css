@@ -36,6 +36,7 @@ header h1 {
   border-radius: 5px;
 }
 
+/* nav-bar */
 nav {
   display: flex;
   align-items: center;
@@ -50,6 +51,16 @@ nav a {
   text-decoration: underline;
   text-underline-position: under;
   text-underline-offset: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+  nav a {
+    font-size: 18px;
+  }
+}
+
+nav a:hover {
+  opacity: 80%;
 }
 
 /* HERO */
@@ -76,6 +87,12 @@ nav a {
   padding-left: 3px;
 }
 
+@media only screen and (max-width: 720px) {
+  .hero-banner h2 {
+    font-size: 15px;
+  }
+}
+
 /* MAIN */
 
 /* Sets flex to entire Main part of the page and creates column direction / right padding for entire main section. */
@@ -93,6 +110,12 @@ main {
   width: 8px;
   font-size: 30px;
 }
+
+@media only screen and (max-width: 760px) {
+  .left {
+      font-size: 23px;
+    }
+  }
 
 
 /* About Me Section */
@@ -220,6 +243,13 @@ main {
   gap: 30px;
   flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 760px) {
+  .contact-links {
+      gap: 10px;
+      margin-left: 25px;
+    }
+  }
 
 /* Footer */
 
