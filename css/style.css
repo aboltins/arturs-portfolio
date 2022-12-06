@@ -211,6 +211,7 @@ main {
   display: flex;
   justify-content: flex-start;
   gap: 19%;
+  padding-bottom: 30px;
 }
 
 .contact-links {
@@ -218,4 +219,15 @@ main {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+
+/* Footer */
+
+footer {
+  height: 30px;
+  color: var(--whiterepeat);
+  background-color:  rgb(30, 29, 29) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
