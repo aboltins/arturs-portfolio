@@ -43,6 +43,7 @@ nav {
   justify-content: center;
 }
 
+/* sets media query on nav for everything under 585px */
 @media only screen and (max-width: 585px) {
   nav {
     flex-direction: column;
@@ -109,7 +110,6 @@ nav a:hover {
 /* MAIN */
 
 /* Sets flex to entire Main part of the page and creates column direction / right padding for entire main section. */
-
 main {
   display: flex;
   flex-direction: column;
@@ -219,8 +219,24 @@ main {
    width: 68%;
    gap: 15px;
    padding-right: 60px;
-
 }
+
+@media only screen and (max-width: 585px) {
+  .work-right{
+   grid-template-columns: 15% 17% 17% 17% 17% 17%;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-areas:
+   "horiseon horiseon horiseon horiseon"
+   "horiseon horiseon horiseon horiseon"
+   "study-guide study-guide study-guide study-guide"
+   "lorem lorem lorem lorem"
+   "ipsum ipsum ipsum ipsum"
+   "dolor dolor dolor dolor";
+   padding-right: 0px;
+   max-width: 80%;
+    }
+  }
+
 
 .horiseon {
   grid-area: horiseon;
