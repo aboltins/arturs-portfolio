@@ -136,9 +136,16 @@ main {
   width: 68%;
 }
 
+@media only screen and (max-width: 680px) {
+  .about-right{
+      flex-direction: column;
+    }
+  }
+
+
 /* Small Avatar image in the about me section */
 .about-right img {
-  height: 140px;
+  height: 200px;
   margin-top: 16px;
   margin-bottom: 16px;
   border-radius: 5px;
@@ -146,6 +153,35 @@ main {
   border-style: solid;
   border-color: rgb(30, 29, 29); 
 }
+
+@media only screen and (max-width: 920px) {
+  .about-right img{
+      height: 150px;
+    }
+  }
+
+@media only screen and (max-width: 680px) {
+  .about-right img{
+      width: 150px;
+      height: auto;
+      align-self: center;
+      padding-bottom: 0;
+    }
+  }
+
+/* paragraph in the about me section */
+.about-right p {
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 680px) {
+  .about-right p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-left: 6px;
+    }
+  }
+
 
 /* Portfolio container Work Section */
 #work {
