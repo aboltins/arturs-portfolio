@@ -1,6 +1,6 @@
 :root {
   --greyrepeat: rgb(77, 76, 76);
-  --whiterepeat: rgb(247, 242, 242);
+  --whiterepeat: rgb(239, 239, 239);
   --fontrepeat: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --blackrepeat: rgb(30, 29, 29);
 }
@@ -155,57 +155,54 @@ main {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 150px 150px 150px 150px;
   grid-template-areas:
-    "horiseon horiseon horiseon horiseon"
-    "horiseon horiseon horiseon horiseon"
-    "study-guide study-guide lorem lorem"
-    "ipsum ipsum dolor dolor";
+    "project1 project1 project1 project1"
+    "project1 project1 project1 project1"
+    "project2 project2 project3 project3"
+    "project4 project4 project5 project5";
   gap: 0px;
   width: 68%;
   gap: 15px;
   padding-right: 60px;
 }
 
-.horiseon {
-  grid-area: horiseon;
-  background-image: url("../images/horiseon-screenshot.png");
+.project1 {
+  grid-area: project1;
+  background-image: url("../images/sunTrack-screenshot.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.study-guide {
-  grid-area: study-guide;
-  background-image: url("../images/study-guide-screenshot.png");
+.project2 {
+  grid-area: project2;
+  background-image: url("../images/code-quiz-screenshot.png");
   background-position: centre;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
-.lorem {
-  grid-area: lorem;
-  /* Photo by <a href="https://unsplash.com/@whoisdenilo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Who’s Denilo ?</a> on <a href="https://unsplash.com/s/photos/abstract-grey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-image: url("../images/denilo-unsplash.jpg");
+.project3 {
+  grid-area: project3;
+  background-image: url("../images/password-generator-screenshot.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.project4 {
+  grid-area: project4;
+  background-image: url("../images/bootstrap-portfolio-screenshot.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.ipsum {
-  grid-area: ipsum;
-  /* Photo by <a href="https://unsplash.com/@dermanuskript?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emanuel Haas</a> on <a href="https://unsplash.com/s/photos/abstract-grey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-image: url("../images/emanuel-unsplash.jpg");
+.project5 {
+  grid-area: project5;
+  background-image: url("../images/blackjack-screenshot.png");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.dolor {
-  grid-area: dolor;
-  /* Photo by <a href="https://unsplash.com/@rgaleriacom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/s/photos/abstract-grey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-image: url("../images/ricardo-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 /* Targets all of the portfolio anchors at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
@@ -365,17 +362,17 @@ footer {
 /* sets media query on the right column of the portfolio work section for everything under 585px*/
 @media only screen and (max-width: 585px) {
   .work-right {
+    padding-right: 0px;
+    max-width: 80%;
     grid-template-columns: 15% 17% 17% 17% 17% 17%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "horiseon horiseon horiseon horiseon"
-      "horiseon horiseon horiseon horiseon"
-      "study-guide study-guide study-guide study-guide"
-      "lorem lorem lorem lorem"
-      "ipsum ipsum ipsum ipsum"
-      "dolor dolor dolor dolor";
-    padding-right: 0px;
-    max-width: 80%;
+      "project1 project1 project1 project1"
+      "project1 project1 project1 project1"
+      "project2 project2 project2 project2"
+      "project3 project3 project3 project3"
+      "project4 project4 project4 project4"
+      "project5 project5 project5 project5"
   }
 }
 
