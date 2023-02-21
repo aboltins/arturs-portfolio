@@ -158,7 +158,8 @@ main {
     "project1 project1 project1 project1"
     "project1 project1 project1 project1"
     "project2 project2 project3 project3"
-    "project4 project4 project5 project5";
+    "project4 project4 project5 project5"
+    "project6 project6 project6 project6";
   gap: 0px;
   width: 68%;
   gap: 15px;
@@ -203,6 +204,14 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
+}
+
+.project6 {
+  grid-area: project6;
+  background-image: url("../images/readme-gen-screenshot.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Targets all of the portfolio anchors at the same time, makes them flex containers, to be able to freely move titles of the containers around. */
@@ -373,6 +382,8 @@ footer {
       "project3 project3 project3 project3"
       "project4 project4 project4 project4"
       "project5 project5 project5 project5"
+      "project6 project6 project6 project6"
+      
   }
 }
 
