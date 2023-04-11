@@ -155,13 +155,14 @@ main {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 150px 150px 150px 150px;
   grid-template-areas:
-    "project1 project1 project1 project1"
+    "project8 project8 project8 project8"
+    "project8 project8 project8 project8"
     "project1 project1 project1 project1"
     "project7 project7 project7 project7"
     "project6 project6 project6 project6"
     "project2 project2 project3 project3"
     "project4 project4 project5 project5";
-    
+
   gap: 0px;
   width: 68%;
   gap: 15px;
@@ -220,6 +221,14 @@ main {
   grid-area: project7;
   background-image: url("../images/team-gen-ss-1.png");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project8 {
+  grid-area: project8;
+  background-image: url("../images/News-Pal-Home-Page.png");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -386,7 +395,7 @@ footer {
     grid-template-columns: 15% 17% 17% 17% 17% 17%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "project1 project1 project1 project1"
+      "project8 project8 project8 project8"
       "project1 project1 project1 project1"
       "project7 project7 project7 project7"
       "project6 project6 project6 project6"
@@ -394,8 +403,8 @@ footer {
       "project3 project3 project3 project3"
       "project4 project4 project4 project4"
       "project5 project5 project5 project5"
-      
-      
+
+
   }
 }
 
