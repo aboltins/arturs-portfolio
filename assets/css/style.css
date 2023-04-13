@@ -155,13 +155,12 @@ main {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 150px 150px 150px 150px;
   grid-template-areas:
-    "project8 project8 project8 project8"
-    "project8 project8 project8 project8"
-    "project1 project1 project1 project1"
     "project7 project7 project7 project7"
+    "project7 project7 project7 project7"
+    "project1 project1 project1 project1"
     "project6 project6 project6 project6"
-    "project2 project2 project3 project3"
-    "project4 project4 project5 project5";
+    "project5 project5 project2 project2"
+    "project3 project3 project4 project4";
 
   gap: 0px;
   width: 68%;
@@ -195,38 +194,30 @@ main {
 
 .project4 {
   grid-area: project4;
-  background-image: url("../images/bootstrap-portfolio-screenshot.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.project5 {
-  grid-area: project5;
   background-image: url("../images/blackjack-screenshot.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
 }
 
-.project6 {
-  grid-area: project6;
+.project5 {
+  grid-area: project5;
   background-image: url("../images/readme-gen-screenshot.png");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.project7 {
-  grid-area: project7;
+.project6 {
+  grid-area: project6;
   background-image: url("../images/team-gen-ss-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.project8 {
-  grid-area: project8;
+.project7 {
+  grid-area: project7;
   background-image: url("../images/News-Pal-Home-Page.png");
   background-position: top;
   background-size: cover;
@@ -395,14 +386,13 @@ footer {
     grid-template-columns: 15% 17% 17% 17% 17% 17%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "project8 project8 project8 project8"
-      "project1 project1 project1 project1"
       "project7 project7 project7 project7"
+      "project1 project1 project1 project1"
       "project6 project6 project6 project6"
+      "project5 project5 project5 project5"
       "project2 project2 project2 project2"
       "project3 project3 project3 project3"
       "project4 project4 project4 project4"
-      "project5 project5 project5 project5"
 
 
   }
